@@ -1,15 +1,14 @@
-﻿using System;
-using NUnit.Framework;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ScrutorArgumentNullException
 {
-    class ClassFactoryTests
+    [TestClass]
+    public class ClassFactoryTests
     {
-        [Test]
+        [TestMethod]
         public void run_code_that_will_fail_with_tooling()
         {
             var implementations = ClassFactory.GetAllImplementationsOfIClass();
-
         }
     }
 }
